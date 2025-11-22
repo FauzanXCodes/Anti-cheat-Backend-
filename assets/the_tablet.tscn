@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1kifqeod4uaf"]
+
+
+[ext_resource type="Script" path="res://assets/the_tablet.gd" id="2_h2vmu"]
+
+[node name="tablet" type="Node3D"]
+
+[node name="tablet" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.019552, 0, 0, 0, 0.019552, 0, 0, 0, 0.019552, 0, 0, 0)
+script = ExtResource("2_h2vmu")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="tablet"]
+transform = Transform3D(20.48, 0, 0, 0, -8.96025e-06, -20.48, 0, 20.48, -8.96025e-06, -0.016, -15.823, 22.848)
+;stream = ExtResource("1_wten7")
+autoplay = true

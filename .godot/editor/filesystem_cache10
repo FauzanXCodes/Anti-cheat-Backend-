@@ -1,0 +1,57 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763788062
+Camera.gd::GDScript::6439243478132028849::1763787573::0::1::::<>Camera3D<><>0<>0<><>::
+circleHUD.gd::GDScript::5586780032212433616::1763787573::0::1::::<>Control<><>0<>0<><>::
+empty.png::CompressedTexture2D::7306212525821946758::1763787573::1763787574::1::::<><><>0<>0<>86384b0a4e5ff97f0df36c48c2c4238d<>res://.godot/imported/empty.png-6cfed9f1c7a7361513986ce73b0d7afa.ctex::
+enemy.gd::GDScript::5448792847519594829::1763787574::0::1::::<>RigidBody3D<><>0<>0<><>::
+enemy.tscn::PackedScene::266837019975161596::1763787574::0::1::::<><><>0<>0<><>::res://enemy.gd
+export_presets.cfg::TextFile::-1::1763787574::0::1::::<><><>0<>0<><>::
+full.png::CompressedTexture2D::3824897737328477764::1763787574::1763787574::1::::<><><>0<>0<>ffb9ccc3758172d9d3122f418f416b9a<>res://.godot/imported/full.png-5a8d97316ae8dd9641682e09c5a2a999.ctex::
+HUD.tscn::PackedScene::4373410174662129795::1763787575::0::1::::<><><>0<>0<><>::res://circleHUD.gd<>uid://bwfhe8aqr2y5t::::res://assets/HUD.png<>uid://bh52gfo1v3adn::::res://assets/HUD2.png
+icon.svg::CompressedTexture2D::982103501590736988::1763787575::1763787575::1::::<><><>0<>0<>14231960d933c6a67b6e6e3fc9896f1c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+menu.tscn::PackedScene::6972061654510046784::1763787575::0::1::::<><><>0<>0<><>::uid://bn48v2mdby7nf::::res://assets/Ubuntu-M.ttf
+node_3d.gd::GDScript::6919089747640709072::1763787575::0::1::::<>Node3D<><>0<>0<><>::
+node_3d.tscn::PackedScene::5479344750414298265::1763788062::0::1::::<><><>0<>0<><>::uid://btyatewnvi5bd::::res://player.gd<>uid://c5twnrhuedqhk::::res://node_3d.gd<>uid://d2i1clxy4n3i::::res://enemy.tscn<>uid://b3krorfu6shx0::::res://HUD.tscn<>uid://cvy1io8hoso2::::res://assets/pistol_0.png<>uid://cj1jqktuasw86::::res://assets/pistol_1.png<>uid://5wgq6fdynnmo::::res://assets/762x39 Single Isolated WAV.wav<>uid://0oc3jutq2mk6::::res://assets/pistol_2.png<>uid://dagj2gp0b4x1i::::res://assets/9mm Pistol Dry Fire.wav<>uid://cntslapbyii88::::res://assets/pistol_3.png<>uid://bxcl6r7er3c8l::::res://assets/pistol_4.png<>uid://cosi2kbgi3w36::::res://assets/pistol_5.png<>uid://bhi2bj4bv0gdd::::res://assets/pistol_6.png<>uid://c5vvixni6t856::::res://assets/9mm Pistol Rack Part 1.wav<>uid://bbgh0vlj6xpi0::::res://assets/9mm Pistol Reload 1.wav<>uid://bcpppumyh35rj::::res://assets/9mm Pistol Rack Part 2.wav<>uid://p28swbpm4prs::::res://assets/9mm Pistol Reload 2.wav<>uid://dvm1eb2a3t11f::::res://assets/9mm Pistol Rack Full.wav<>uid://bk5qxc6hb5iqn::::res://assets/images.jpg<>uid://i1xsfxvo8ctf::::res://UI.tscn<>uid://ci4gg4478fvbv::::res://functions/main.gd<>uid://b1kifqeod4uaf::::res://assets/the_tablet.tscn<>uid://ckh0nnjjs10x7::::res://assets/Epic_BlueSunset_EquiRect_flat.png<>uid://dcoipuh7nvxth::::res://nukeui.tscn
+nukeanim.gd::GDScript::6476491198169409315::1763787575::0::1::::<>AnimationPlayer<><>0<>0<><>::
+nukeui.gd::GDScript::3112936857355967862::1763787575::0::1::::<>Control<><>0<>0<><>::
+nukeui.tscn::PackedScene::7329054612515702305::1763787575::0::1::::<><><>0<>0<><>::res://nukeui.gd<>uid://h8skqrwvr743::::res://assets/nuke.wav
+pistol.tscn::PackedScene::853522455529753660::1763787575::0::1::::<><><>0<>0<><>::uid://dxe12rmlvwjfw::::res://assets/pistol.glb
+player.gd::GDScript::3769587953695514445::1763787575::0::1::::<>CharacterBody3D<><>0<>0<><>::
+README.md::TextFile::-1::1763787575::0::1::::<><><>0<>0<><>::
+UI.gd::GDScript::2884445153466114654::1763787575::0::1::::<>Control<><>0<>0<><>::
+UI.tscn::PackedScene::616613504955134939::1763787575::0::1::::<><><>0<>0<><>::res://UI.gd<>uid://crc6twp0rgprx::::res://assets/ammo.png<>uid://6i2c06kqgnao::::res://assets/bullet.png
+::res://addons/::1763787579
+::res://addons/ffmpeg/::1763787579
+::res://addons/ffmpeg/win64/::1763787579
+::res://assets/::1763788335
+9mm Pistol Dry Fire.wav::AudioStreamWAV::7172243326424548528::1763787579::1763787579::1::::<><><>0<>0<>d2df55738a4073001c9e3fac8cecb817<>res://.godot/imported/9mm Pistol Dry Fire.wav-d63aadaedb5bcece68687add55e32d36.sample::
+9mm Pistol Rack Full.wav::AudioStreamWAV::8659586179785512697::1763787579::1763787579::1::::<><><>0<>0<>9e5bbe4b6674116a72367972a43f3a35<>res://.godot/imported/9mm Pistol Rack Full.wav-cf949e25c90c61f66dd035245753192b.sample::
+9mm Pistol Rack Part 1.wav::AudioStreamWAV::6923149181086970343::1763787579::1763787579::1::::<><><>0<>0<>2e3dd769208e0b029a92b084b64a57b3<>res://.godot/imported/9mm Pistol Rack Part 1.wav-a92b68ebc9e331b1f2774d3604baa8e0.sample::
+9mm Pistol Rack Part 2.wav::AudioStreamWAV::2558702649185729043::1763787579::1763787579::1::::<><><>0<>0<>39e3288b6660ee427085eccc5fdd793d<>res://.godot/imported/9mm Pistol Rack Part 2.wav-1d8db371c80b0ded574e13c101487fcd.sample::
+9mm Pistol Reload 1.wav::AudioStreamWAV::2469466578086948205::1763787579::1763787579::1::::<><><>0<>0<>b72e13dbde6932289a8b379ecec3b236<>res://.godot/imported/9mm Pistol Reload 1.wav-2d6f1ce84473ed7eb650acec133aeb06.sample::
+9mm Pistol Reload 2.wav::AudioStreamWAV::1110607816738913880::1763787579::1763787579::1::::<><><>0<>0<>5e68cc9f2f6c0725e3fa9a2457f07316<>res://.godot/imported/9mm Pistol Reload 2.wav-390757f56cae741132e381fcd90696ce.sample::
+9mm Single Isolated.wav::AudioStreamWAV::3645793197269325377::1763787579::1763787579::1::::<><><>0<>0<>856e4efb686d9519727856f656eb5e2f<>res://.godot/imported/9mm Single Isolated.wav-f04fdefc867d37901e0a3915b884569f.sample::
+762x39 Single Isolated WAV.wav::AudioStreamWAV::2151476130506144994::1763787579::1763787579::1::::<><><>0<>0<>3a80fbf71a9d8ebb3c6bb1b1b6a79b5d<>res://.godot/imported/762x39 Single Isolated WAV.wav-6c1b40a1c04095117edf8dde4a299b41.sample::
+ammo.png::CompressedTexture2D::5972097801445452085::1763787579::1763787579::1::::<><><>0<>0<>e64dd15afd0cae591200f447bdb9779e<>res://.godot/imported/ammo.png-8e32d4eb9fd99120a8d85ead8ec3046c.ctex::
+bullet.png::CompressedTexture2D::2194013466652663410::1763787579::1763787579::1::::<><><>0<>0<>049af753dcbbaa29ce517a001a8be917<>res://.godot/imported/bullet.png-c68d06721d4ad8b0013707b0a51654af.ctex::
+Epic_BlueSunset_EquiRect_flat.png::CompressedTexture2D::5490722285325685730::1763787579::1763787579::1::::<><><>0<>0<>d841bd381cf5db7569a5be0ec053072f<>res://.godot/imported/Epic_BlueSunset_EquiRect_flat.png-511c691b464364949fddbe0705d5e849.s3tc.ctex::
+HUD1.png::CompressedTexture2D::7267851158844958590::1763787579::1763787579::1::::<><><>0<>0<>9a5d9c71e5424a452bd10b0f17de6c84<>res://.godot/imported/HUD1.png-ed3c7bb5eeb426eb7a6cb05755ecd185.ctex::
+HUD2.png::CompressedTexture2D::2941324280803742179::1763787579::1763787579::1::::<><><>0<>0<>999969a0169d4b93e4da8ed5224e2bb2<>res://.godot/imported/HUD2.png-e1be730c94353f7685f1e1450dfe2a05.ctex::
+HUD.png::CompressedTexture2D::3941331028646426455::1763787579::1763787579::1::::<><><>0<>0<>d74212edd8462ab1b0dd06b7081be51b<>res://.godot/imported/HUD.png-9606f8965bec72f63169cb2eb21ff1a6.ctex::
+images.jpg::CompressedTexture2D::3151253151095504621::1763749857::1763787965::1::::<><><>0<>0<>183f6faf28059c9cd92715806c8ba05e<>res://.godot/imported/images.jpg-64ec549cd063d13cdb90b2059d913e51.s3tc.ctex::
+nuke.wav::AudioStreamWAV::560558002822670542::1763787579::1763787579::1::::<><><>0<>0<>61d71b81f95a7dc2804d0f2780e26036<>res://.godot/imported/nuke.wav-8df3abcf2e129d45dec3c25d84978d63.sample::
+pistol.glb::PackedScene::8783490735980980804::1763787579::1763787579::1::::<><><>0<>0<>7a7caaca5587cdc9ee7aa753094e376d<>res://.godot/imported/pistol.glb-530555732d33acb6b1a7c9b91359da72.scn::
+pistol_0.png::CompressedTexture2D::185233701902600383::1763787579::1763787579::1::::<><><>0<>0<>e46e1faa3d0a3f90df34279602942b56<>res://.godot/imported/pistol_0.png-b8beb0552f3cf956ab4538dd8662f7c7.s3tc.ctex::
+pistol_1.png::CompressedTexture2D::5458790362865652137::1763787579::1763787579::1::::<><><>0<>0<>04fa04b04bf7614e0d9fcd6906b111f4<>res://.godot/imported/pistol_1.png-bbdb86bd33b8982a0b7b605a8daac60b.s3tc.ctex::
+pistol_2.png::CompressedTexture2D::1783794320214485979::1763787579::1763787579::1::::<><><>0<>0<>c5e60aab08818532d19f4a8120cf6cc6<>res://.godot/imported/pistol_2.png-7679597e8fe4c2dbfe2f809913d4b8ce.s3tc.ctex::
+pistol_3.png::CompressedTexture2D::5725632084860407619::1763787579::1763787579::1::::<><><>0<>0<>fc9a81559ee081405e6093ae14c88638<>res://.godot/imported/pistol_3.png-205d92eaa535e6c4b396e8330902be44.s3tc.ctex::
+pistol_4.png::CompressedTexture2D::4005617031943705445::1763787580::1763787580::1::::<><><>0<>0<>ff8bdcb170f43843302ca2e80676930d<>res://.godot/imported/pistol_4.png-948565acaa539efb51a6fd7c10586d28.s3tc.ctex::
+pistol_5.png::CompressedTexture2D::5793178457332031375::1763787580::1763787580::1::::<><><>0<>0<>f443d0298c1f74ea71f808471c82620b<>res://.godot/imported/pistol_5.png-d669d2b0f8f207dc64deceb50604447b.s3tc.ctex::
+pistol_6.png::CompressedTexture2D::2895899273374372857::1763787580::1763787580::1::::<><><>0<>0<>8a015bc402e0ff620b915b1c10eb2f9f<>res://.godot/imported/pistol_6.png-be11b13cce3d4d1f2fd76fb25df6d278.s3tc.ctex::
+the_tablet.gd::GDScript::3032271027422123435::1763787580::0::1::::<>Node3D<><>0<>0<><>::
+the_tablet.glb::PackedScene::786011228026618002::1763787580::1763787580::1::::<><><>0<>0<>eaf05d391e700dacb5ca4cd797c2f4a7<>res://.godot/imported/the_tablet.glb-4c9e80267c1ae48bccfcaa9c296cccc5.scn::
+the_tablet.tscn::PackedScene::4232469907928284845::1763787580::0::1::::<><><>0<>0<><>::res://assets/the_tablet.gd
+Ubuntu-M.ttf::FontFile::3360785205095281903::1763787580::1763787580::1::::<><><>0<>0<>fa21f3617a85a24b1bebb76b55cc78e1<>res://.godot/imported/Ubuntu-M.ttf-4f6a736dd249c1739e851a9cfb70571d.fontdata::
+wall.jpg::CompressedTexture2D::4523820565710449172::1763750804::1763788355::1::::<><><>0<>0<>9cef8924237e94c1c148a02d69f7a2f9<>res://.godot/imported/wall.jpg-afe8d7f60303ec5df93b5ce33c5d4a27.s3tc.ctex::
+::res://functions/::1763787580
+main.gd::GDScript::5394595657552958595::1763787580::0::1::::<>Node<><>0<>0<><>::
