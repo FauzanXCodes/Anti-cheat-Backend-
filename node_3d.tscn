@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=4 uid="uid://ckciaiwwtbl42"]
+[gd_scene load_steps=73 format=4 uid="uid://ckciaiwwtbl42"]
 
 [ext_resource type="Script" uid="uid://btyatewnvi5bd" path="res://player.gd" id="1_4q1sr"]
 [ext_resource type="Script" uid="uid://c5twnrhuedqhk" path="res://node_3d.gd" id="1_6d13t"]
@@ -21,7 +21,9 @@
 [ext_resource type="Texture2D" uid="uid://b5pmwtlfq8pou" path="res://assets/wall.jpg" id="19_dhlwf"]
 [ext_resource type="PackedScene" uid="uid://i1xsfxvo8ctf" path="res://UI.tscn" id="19_gp0qn"]
 [ext_resource type="Script" uid="uid://ci4gg4478fvbv" path="res://functions/main.gd" id="20_qylfc"]
+[ext_resource type="Script" uid="uid://ujhqogwn0sa1" path="res://score_fetcher.gd" id="21_5t8nk"]
 [ext_resource type="PackedScene" uid="uid://b1kifqeod4uaf" path="res://assets/the_tablet.tscn" id="21_kc5x8"]
+[ext_resource type="Script" uid="uid://d2id60khqs0op" path="res://ActionSender.gd" id="26_j3e5s"]
 [ext_resource type="Texture2D" uid="uid://ckh0nnjjs10x7" path="res://assets/Epic_BlueSunset_EquiRect_flat.png" id="30_38phr"]
 [ext_resource type="PackedScene" uid="uid://dcoipuh7nvxth" path="res://nukeui.tscn" id="35_4n8sh"]
 
@@ -6626,6 +6628,9 @@ material = SubResource("StandardMaterial3D_id0nj")
 
 [node name="Control" parent="." instance=ExtResource("19_gp0qn")]
 
+[node name="ScoreFetcher" type="Node" parent="Control"]
+script = ExtResource("21_5t8nk")
+
 [node name="main" type="Node" parent="."]
 script = ExtResource("20_qylfc")
 
@@ -6646,9 +6651,13 @@ compositor = SubResource("Compositor_gddlu")
 transform = Transform3D(1, 0, 0, 0, 0.936883, 0.349643, 0, -0.349643, 0.936883, -3.58286, 27.809, 51.4346)
 sky_mode = 1
 
+[node name="Network" type="Node" parent="."]
+script = ExtResource("26_j3e5s")
+
 [connection signal="animation_finished" from="CharacterBody3D/Camera3D/pistol/animplayer" to="main" method="_on_animplayer_animation_finished"]
 [connection signal="animation_started" from="CharacterBody3D/Camera3D/pistol/animplayer" to="main" method="_on_animplayer_animation_started"]
 [connection signal="animation_finished" from="AnimationPlayer" to="HUD" method="_on_animation_player_animation_finished"]
 [connection signal="animation_started" from="AnimationPlayer" to="HUD" method="_on_animation_player_animation_started"]
 
 [editable path="Control"]
+[editable path="HUD"]

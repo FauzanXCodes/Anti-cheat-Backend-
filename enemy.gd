@@ -10,6 +10,9 @@ var is_dead = false
 @onready var respawn_timer = Timer.new()
 
 func _ready():
+	# Add enemy to group so main.gd can find it
+	add_to_group("enemy")
+
 	initial_position = global_transform.origin
 	respawn_timer.wait_time = respawn_time
 	respawn_timer.one_shot = true

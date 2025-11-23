@@ -3,10 +3,14 @@ extends Control
 @onready var bullets = [$Background/Bullet, $Background/Bullet2, $Background/Bullet3, $Background/Bullet4, $Background/Bullet5, $Background/Bullet6, $Background/Bullet7]
 @onready var main = $"../main"
 @onready var score_label = $ScoreLabel
+@onready var health_bar = $HealthBar  # Assuming there's a HealthBar node in the scene
 var score = 0
+var player
 
 func _ready():
+	player = get_tree().get_first_node_in_group("player")  # Find the player node
 	update_score_label()
+	update_health_bar()
 
 func increment_score():
 	score += 1
@@ -14,6 +18,20 @@ func increment_score():
 
 func update_score_label():
 	score_label.text = "Score: " + str(score)
+
+func update_health_bar():
+	if player:
+		if health_bar:
+			# Update the health bar's value (assuming it's a ProgressBar node)
+			health_bar.value = player.health
+			health_bar.max_value = player.MAX_HEALTH
+			# Change color based on health
+			if player.health <= 0:
+				health_bar.modulate = Color.RED
+			elif player.health <= player.MAX_HEALTH * 0.3:
+				health_bar.modulate = Color.YELLOW
+			else:
+				health_bar.modulate = Color.GREEN
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -34,3 +52,6 @@ func _process(delta):
 	else:
 		for bullet in bullets:
 			bullet.visible = true
+
+	# Update health bar continuously
+	update_health_bar()

@@ -1,29 +1,62 @@
-# OpenFPS
- OpenFPS is a project that aims to help people build first-person shooter (FPS) games in Godot, as this field is lacking interest around the godot comuunity.
-# Features:
- 1. Basic FPS character controller.
- 2. Weapon system that supports only a gun as of now.
- 3. Reloading mechanism that works.
- 4. An enemy.
- 5. Hitscan weapon mechanisem.
- 6. HUD showing remaining bullets.
- 7. An open enivronment for future contributions.
- 
-By using OpenFPS, you can save yourself a significant amount of time and effort in building your own FPS game.
+<div align="center">
 
-OpenFPS is still under development, but it is a valuable resource for anyone who wants to build an FPS game in Godot.
+# 🎯 ZK-Sniper
+### The First FPS with Non-Invasive ZK Anti-Cheat
 
-# Demo:
+![Starknet](https://img.shields.io/badge/Starknet-Powered-blue?logo=starknet)
+![Godot](https://img.shields.io/badge/Godot-4.3-478cbf?logo=godot-engine&logoColor=white)
+![Cairo](https://img.shields.io/badge/Cairo-1.0-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 
+<p align="center">
+  <img src="path/to/your/screenshot_or_gif.gif" alt="Gameplay Demo" width="600">
+  <br>
+  <!-- <em>(Replace this line with a GIF of your gameplay!)</em> -->
+</p>
 
-https://github.com/user-attachments/assets/9f729762-60f7-4c99-8dfa-f62edb01e430
+</div>
 
+---
 
-# LICENSING:
-Code is licensed under MIT License.
+## 🛑 The Problem
+Current industry standards for anti-cheat (Vanguard, Ricochet, Easy Anti-Cheat) rely on an **invasive philosophy**:
+1.  **Kernel Access (Ring 0):** They run at the highest privilege level of your OS.
+2.  **Privacy Nightmare:** They scan your entire hard drive and memory.
+3.  **Vulnerable:** Despite this, cheaters bypass them using hardware cheats (DMA).
 
-All assets are licensed under [Creative Commons (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+## ✅ Our Solution: "Proof of Shot"
+**ZK-Sniper** moves the anti-cheat logic from the Client's Kernel to the **Starknet Blockchain**. We don't scan your files; we verify the **Physics** of your actions.
 
-# Crediting:
-Crediting this project isn't required but is highly appreciated
+* **Client Side:** The game generates a cryptographically secure proof that the shot followed the laws of physics (Recoil, Cooldown, Vector).
+* **Chain Side:** The Starknet contract acts as the "Judge."
+    * Valid Proof = Hit Registered + Score Updated.
+    * Invalid Proof (Aimbot/No-Recoil) = **Transaction Reverted.**
+
+> *"We verify the shot, not the user's operating system."*
+
+---
+
+## 🏗️ Architecture
+
+We utilize the **Dojo Engine** to sync game state on-chain. Here is how the data flows:
+
+```mermaid
+sequenceDiagram
+    participant P as Player (Godot)
+    participant K as Katana (Sequencer)
+    participant C as Cairo Contract (Judge)
+    participant T as Torii (Indexer)
+
+    P->>P: Player Shoots (Input: Angle, Recoil)
+    P->>K: Send Transaction: shoot(input_data)
+    K->>C: Execute System
+    C->>C: Verify Physics (assert recoil > 0)
+    alt Physics Valid
+        C->>C: Update Kill Count
+        C-->>K: State Change Accepted
+    else Physics Invalid (Cheat)
+        C-->>K: PANIC: REVERT TRANSACTION
+    end
+    K->>T: State Update
+    T-->>P: Sync Scoreboard
