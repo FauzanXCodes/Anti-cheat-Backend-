@@ -1,7 +1,0 @@
-res://node_3d.tscn
-res://dojo/shot_sender.gd
-res://dojo/movement_sender.gd
-res://functions/main.gd
-res://player.gd
-res://http_request.gd
-res://dojo/dojo_config.gd

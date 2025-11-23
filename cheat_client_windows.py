@@ -1,8 +1,6 @@
 import requests
 import time
-import random
 
-# <<< IMPORTANT >>> 
 # Replace with your WSL IP
 SERVER_URL = "http://172.29.151.248:8000/send"
 
@@ -17,6 +15,7 @@ def send_movement(position, velocity):
     }
 
     print("\nSending:", payload)
+
     try:
         r = requests.post(SERVER_URL, json=payload, timeout=2)
         print("Server Response:", r.json())
@@ -25,23 +24,24 @@ def send_movement(position, velocity):
 
 
 def windows_speedhack():
-    print("=== Running MASSIVE SpeedHack (Windows Client) ===")
+    print("\n=== WINDOWS SUPER SPEEDHACK ACTIVATED ===")
+    print("Cheat is running…")
 
     pos = [0, 0, 0]
 
-    # Massive speedhack: move extremely fast each packet
-    for step in range(1, 10):
+    # EXTREME SPEEDHACK: teleport 500+ meters EVERY packet
+    for step in range(1, 20):
 
-        # Move 50 meters per packet = guaranteed detection
-        pos = [0, 0, step * 50]
+        # TELEPORT + EXTREME SPEED
+        jump_distance = step * 500     # 500m per packet = guaranteed ban
+        pos = [0, 0, jump_distance]
 
-        # Velocity spoofing removed, but we still send small velocity
-        vel = [0, 0, 0]
+        vel = [0, 0, 0]                # velocity spoof removed
 
         send_movement(pos, vel)
 
-        time.sleep(0.1)  # Reduce if you want more aggressive hack
+        time.sleep(0.05)               # send faster packets
 
 
 if __name__ == "__main__":
-    windows_speedhack()
+    windows_speedhack()  # AUTORUNS SUPER SPEEDHACK
